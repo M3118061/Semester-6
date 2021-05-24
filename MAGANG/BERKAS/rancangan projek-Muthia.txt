@@ -1,0 +1,37 @@
+APLIKASI PERGUDANGAN BAHAN MAKANAN :
+menggunakan laravel-blade
+
+Aktor : 
+- Admin
+
+Alur sistem :
+1. Menampilkan halaman home (frontend) terdapat button login
+2. Admin melakukan login sesuai dengan email dan password di database
+3. Jika berhasil login maka akan muncul pesan berhasil login dan masuk halaman dashboard
+4. Dalam halaman dashboard terdapat menu :
+   a. data admin
+	  - tabel users (crud)
+	    field : id, nama, alamat, no telp, email, password (enkripsi), jenis kelamin, role (user/admin)
+   b. data gudang
+	  - stok barang (crud)
+	    field : nama barang, jenis barang (dropdown data dari tabel jenis barang), jumlah barang, satuan (dropdown data dari tabel satuan)
+	  - jenis barang (create & delete)
+	    field : id, jenis barang
+	  - satuan (create & delete)
+	    field : id, satuan
+   c. transaksi
+      - barang masuk (crud)
+	    field : id, nama barang, jenis barang, jumlah barang, satuan, nama suplier
+	  - barang keluar (crud)
+	    field : id, nama barang, jenis barang, jumlah barang, satuan
+   d. suplier
+      - data suplier (crud)
+	    field : id, nama suplier, alamat, no telp, email
+   e. laporan
+      - stok barang (cetak pdf)
+	  - barang masuk (cetak pdf)
+	  - barang keluar (cetak pdf)
+   f. logout
+   
+   Setiap tabel terdapat fungsi filtering untuk memilih data yang akan ditampilkan berdasarkan bulan dan tahun
+   

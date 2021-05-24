@@ -1,0 +1,52 @@
+APLIKASI PERGUDANGAN BAHAN MAKANAN :
+
+Aktor : 
+- Admin -> mengelola semua data termasuk data pegawai
+- Pegawai -> membantu admin mengelola semua data kecuali data pegawai
+
+Fitur :
+1. Login
+2. Mengelola data pegawai
+3. Mengelola data gudang
+	- data stok barang
+	- data jenis barang
+	- data satuan barang
+4. Mengelola transaksi
+	- barang masuk
+	- barang keluar
+5. Mengelola data supplier
+6. Cetak laporan
+	- stok barang
+	- barang masuk (berdasarkan bulan dan tahun masuknya)
+	- barang keluar (berdasarkan bulan dan tahun keluarnya)
+7. Logout
+
+Terdapat juga pengingat barang kedaluarsa
+Dihitung berdasarkan tanggal exp yang terdapat pada tabel stok barang.
+3 hari sebelum tanggal exp diberi pengingat.
+
+
+Alur sistem :
+
+1. Admin
+   - Masuk ke halaman home terdapat button login
+   - Admin melakukan login sesuai dengan rolenya
+   - Jika berhasil login maka akan muncul pesan berhasil login kemudian masuk ke halaman dashboard admin
+   - Mengelola data pegawai
+   - Mengelola data gudang
+   - Mengelola transaksi
+   - Mengelola data supplier
+   - Cetak laporan
+   - Logout
+   - Memberikan laporan kepada pimpinan
+   
+2. Users
+   - Masuk ke halaman home terdapat button login
+   - Pegawai melakukan login sesuai dengan rolenya
+   - Jika berhasil login maka akan muncul pesan berhasil login kemudian masuk ke halaman dashboard pegawai
+   - Mengelola data gudang
+   - Mengelola transaksi
+   - Mengelola data supplier
+   - Cetak laporan
+   - Logout
+   - Memberikan laporan kepada admin
